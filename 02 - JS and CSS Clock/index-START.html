@@ -62,41 +62,11 @@
       background: black;
       position: absolute;
       top: 50%;
-      transform-origin: 100%; /*軸心的位置*/
-      transform: rotate(90deg);/*指向到 00:000*/
-      transition: all 0.05s;
-      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
     }
   </style>
 
   <script>
-    (function(){
-    const secondHand = document.querySelector(".second-hand");
-    const minHand = document.querySelector(".min-hand");
-    const hourHand = document.querySelector(".hour-hand");
-
-    const now = new Date();
-    const seconds = now.getSeconds();
-    const mins = now.getMinutes();
-    const hours = now.getHours();
-
-    var secondsDeg = (seconds/60) * 360 + 90;
-    var minsDeg = (mins/60) * 360 + seconds * (6/60) + 90;
-    var hoursDeg = (hours/12) * 360 + mins * (30/60) + 90;
-
-    function setClock(){
-
-      secondsDeg += 360/60;
-      minsDeg += 360/(60*60);
-      hoursDeg += 360/(60*60*12);
-
-      secondHand.style.transform = `rotate(${secondsDeg}deg)`
-      minHand.style.transform = `rotate(${minsDeg}deg)`
-      hourHand.style.transform = `rotate(${hoursDeg}deg)`
-
-    }
-    setInterval(setClock, 1000);
-    })()
+    
   </script>
 
 </body>
