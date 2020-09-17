@@ -5,4 +5,6 @@ JavaScript 30 天
 
 [02 - JS and CSS Clock](https://javascrippt30-index-started.netlify.app/02%20-%20js%20and%20css%20clock/index-finished)
 
-[03 - CSS Variables](https://javascrippt30-index-started.netlify.app/02%20-%20js%20and%20css%20clock/index-finished)
+[03 - CSS Variables](https://javascrippt30-index-started.netlify.app/03%20-%20css%20variables/index-finished)
+
+[04 - Array Cardio Day 1]()
